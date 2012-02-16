@@ -1,0 +1,3 @@
+C:\Documents and Settings\ian\My Documents\SensePost SourceSafe\SpUD\SpUD\bin\Debug\SPUD.exe.config
+C:\Documents and Settings\ian\My Documents\SensePost SourceSafe\SpUD\SpUD\obj\Debug\SPUD.exe
+C:\Documents and Settings\ian\My Documents\SensePost SourceSafe\SpUD\SpUD\obj\Debug\SPUD.pdb

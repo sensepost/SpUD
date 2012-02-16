@@ -1,0 +1,14 @@
+bin\Release\SPUDHelperClasses.dll.config
+bin\Release\SPUDHelperClasses.dll
+bin\Release\SPUDHelperClasses.XmlSerializers.dll
+bin\Release\SPUDHelperClasses.pdb
+obj\Release\ResolveAssemblyReference.cache
+obj\Release\SPUDHelperClasses.dll
+obj\Release\SPUDHelperClasses.pdb
+obj\Release\SPUDHelperClasses.XmlSerializers.dll
+bin\Debug\SPUDHelperClasses.dll.config
+bin\Debug\SPUDHelperClasses.dll
+bin\Debug\SPUDHelperClasses.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\SPUDHelperClasses.dll
+obj\Debug\SPUDHelperClasses.pdb

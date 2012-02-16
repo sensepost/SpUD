@@ -1,0 +1,217 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{ECE350D8-91EA-4029-B0AB-908A0A003B09}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>com.sensepost.SPUD</RootNamespace>
+    <AssemblyName>SPUD</AssemblyName>
+    <StartupObject>com.sensepost.SPUD.Program</StartupObject>
+    <ApplicationIcon>spud.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DotNetSkin.SkinControls, Version=1.1.2363.24368, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\3rdParty\DotNetSkin.SkinControls.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ctl_results.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ctl_results.Designer.cs">
+      <DependentUpon>ctl_results.cs</DependentUpon>
+    </Compile>
+    <Compile Include="debugform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="debugform.Designer.cs">
+      <DependentUpon>debugform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_advresbrs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_advresbrs.Designer.cs">
+      <DependentUpon>frm_advresbrs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_logview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_logview.Designer.cs">
+      <DependentUpon>frm_logview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_maincfg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_maincfg.Designer.cs">
+      <DependentUpon>frm_maincfg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_notify.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_notify.Designer.cs">
+      <DependentUpon>frm_notify.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_quicksearch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_quicksearch.Designer.cs">
+      <DependentUpon>frm_quicksearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frm_splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frm_splash.Designer.cs">
+      <DependentUpon>frm_splash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HttpServer.cs" />
+    <Compile Include="KeyboardHook.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ctl_results.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ctl_results.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="debugform.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>debugform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_advresbrs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_advresbrs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_logview.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_logview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_maincfg.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_maincfg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_notify.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_notify.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_quicksearch.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_quicksearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_splash.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>frm_splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="res_images.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>res_images.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\com.sensepost.web.obj\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\com.sensepost.web.obj\service.wsdl" />
+    <None Include="Web References\com.sensepost.web.obj\StructuredResult.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="res_images.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>res_images.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\com.sensepost.web.obj\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SPUDHelperClasses\SPUDHelperClasses.csproj">
+      <Project>{757A9999-D760-4CA0-907E-E8219B88B7D4}</Project>
+      <Name>SPUDHelperClasses</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\waiting.gif" />
+    <None Include="Resources\loading.gif" />
+    <None Include="Resources\google.gif" />
+    <None Include="Resources\msn_live.gif" />
+    <None Include="Resources\yahoo.gif" />
+    <None Include="Resources\live.JPG" />
+    <None Include="Resources\SpuddySplash.gif" />
+    <Content Include="Service.asmx" />
+    <Content Include="spud.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="http://127.0.0.1:61532/service.asmx%3fWSDL">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\com.sensepost.web.obj\</RelPath>
+      <UpdateFromURL>http://127.0.0.1:61532/service.asmx%3fWSDL</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>SPUD_com_sensepost_web_obj_Service</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
